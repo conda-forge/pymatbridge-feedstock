@@ -5,7 +5,7 @@ Home: https://github.com/arokem/python-matlab-bridge
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Python-MATLAB(R) Bridge and IPython
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pymatbridge-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pymatbridge-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pymatbridge-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pymatbridge-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pymatbridge-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pymatbridge-feedstock/branch/master)
