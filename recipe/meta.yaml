@@ -1,4 +1,4 @@
-{% set version = " 0.5.2" %}
+{% set version = "0.5.2" %}
 
 package:
   name: pymatbridge
@@ -17,6 +17,8 @@ requirements:
   build:
     - python
     - setuptools
+    - pyzmq
+    - numpy
   run:
     - python
     - pyzmq
