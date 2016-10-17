@@ -17,8 +17,6 @@ requirements:
   build:
     - python
     - setuptools
-    - pyzmq
-    - numpy
   run:
     - python
     - pyzmq
@@ -30,7 +28,7 @@ test:
 
 about:
   home: https://github.com/arokem/python-matlab-bridge
-  license: BSD-2-Clause
+  license: BSD 2-Clause
   summary: 'Python-MATLAB(R) Bridge and IPython.'
 
 extra:

@@ -3,7 +3,7 @@ About pymatbridge
 
 Home: https://github.com/arokem/python-matlab-bridge
 
-Package license: BSD-2-Clause
+Package license: BSD 2-Clause
 
 Feedstock license: BSD 3-Clause
 
