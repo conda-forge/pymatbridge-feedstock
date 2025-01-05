@@ -10,21 +10,23 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
     - pip
     - pyzmq
     - numpy
   run:
-    - python
+    - python >={{ python_min }}
     - pyzmq
     - numpy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pymatbridge
 
