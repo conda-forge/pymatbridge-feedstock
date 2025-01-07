@@ -10,27 +10,30 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
+    - setuptools
     - pip
     - pyzmq
     - numpy
   run:
-    - python
+    - python >={{ python_min }}
     - pyzmq
     - numpy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pymatbridge
 
 about:
   home: https://github.com/arokem/python-matlab-bridge
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_file: LICENSE
   summary: 'Python-MATLAB(R) Bridge and IPython'
 
